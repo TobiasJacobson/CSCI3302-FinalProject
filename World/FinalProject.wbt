@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.8406075265089206 0.5175840031138313 0.1596426825670875 0.6629609076046179
-  position 1.8080695914156806 1.694669016116993 3.43299453833119
+  orientation -0.5885686522255271 -0.7792119695178403 -0.21544291164379212 0.9058025938810487
+  position -1.816915847894719 2.0124209026161974 2.8247427635340285
 }
 TexturedBackground {
 }
@@ -15,8 +15,40 @@ RectangleArena {
   floorSize 3 3
 }
 SolidBox {
-  translation -5.71421e-19 0.0968434 1.32
+  translation 0.54 0.0968434 1.09
   rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  size 0.2 0.2 0.2
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 7.17027e-19 0.0968434 0.22
+  rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  name "box(1)"
+  size 0.2 0.2 0.2
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 0.27 0.0968434 0.23
+  rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  name "box(2)"
+  size 0.2 0.2 0.2
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 0.12 0.296843 0.2
+  rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  name "box(3)"
+  size 0.2 0.2 0.2
+  physics Physics {
+  }
+}
+SolidBox {
+  translation -0.08 0.106843 -0.97
+  rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  name "box(4)"
   size 0.2 0.2 0.2
   physics Physics {
   }
@@ -24,4 +56,44 @@ SolidBox {
 E-puck {
   translation 0.75 0 0.75
   controller "epuckController"
+}
+OilBarrel {
+  translation 0.59 0.17 -0.25
+  height 0.34
+  radius 0.1
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 1.31 0.17 -0.25
+  name "oil barrel(1)"
+  height 0.34
+  radius 0.1
+  physics Physics {
+  }
+}
+CardboardBox {
+  translation -0.78 0.15 1.19
+  size 0.3 0.3 0.3
+}
+CardboardBox {
+  translation -0.94 0.15 0.75
+  name "cardboard box(1)"
+  size 0.3 0.3 0.3
+}
+CardboardBox {
+  translation -0.87 0.45 1
+  name "cardboard box(2)"
+  size 0.3 0.3 0.3
+}
+WoodenChair {
+  translation -0.51 0 -0.46
+  rotation 0 1 0 1.309
+}
+WoodenChair {
+  translation 1.34461 0.172882 0.642486
+  rotation 0.999999999985917 -4.596149999935272e-06 -2.6535899999626298e-06 -1.047195307179586
+  name "wooden chair(1)"
+  physics Physics {
+  }
 }
