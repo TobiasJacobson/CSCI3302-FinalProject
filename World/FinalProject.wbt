@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.010167803678234987 0.9894466326544605 0.14454057180290347 3.0567634653790265
-  position 1.185449183222876 0.33510373317620223 -1.3922953563241791
+  orientation -0.001245156889124614 0.9535699626242865 0.30116901561256 3.0854018957193206
+  position 0.5043634488916031 1.557387767857553 -2.1692558596270977
 }
 TexturedBackground {
 }
@@ -13,6 +13,11 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0.26 0 0
   floorSize 3 3
+}
+CardboardBox {
+  translation -0.74 0.45 1.22
+  name "cardboard box(1)"
+  size 0.3 0.3 0.3
 }
 SolidBox {
   translation 1.13 0.016843 -0.77
@@ -87,7 +92,7 @@ OilBarrel {
   }
 }
 OilBarrel {
-  translation 1.31 0.17 -0.25
+  translation 1.31 0.17 -0.19
   name "oil barrel(1)"
   height 0.34
   radius 0.1
@@ -95,16 +100,11 @@ OilBarrel {
   }
 }
 CardboardBox {
-  translation -0.78 0.15 1.19
+  translation -0.59 0.15 1.19
   size 0.3 0.3 0.3
 }
 CardboardBox {
-  translation -0.94 0.15 0.75
-  name "cardboard box(1)"
-  size 0.3 0.3 0.3
-}
-CardboardBox {
-  translation -0.87 0.45 1
+  translation -0.94 0.15 1.22
   name "cardboard box(2)"
   size 0.3 0.3 0.3
 }
@@ -114,7 +114,7 @@ WoodenChair {
 }
 WoodenChair {
   translation 1.34461 0.172882 0.642486
-  rotation 0.999999999985917 -4.596149999935272e-06 -2.6535899999626298e-06 -1.047195307179586
+  rotation -0.999999999985917 4.596149999935272e-06 2.6535899999626298e-06 1.0472
   name "wooden chair(1)"
   physics Physics {
   }
@@ -123,6 +123,12 @@ Ned {
   translation 1.12 2.8022e-08 -0.49
   rotation -0.577349935856137 0.577349935856137 0.5773509358560258 2.09439
   controller "ned_arm_controller"
+}
+Ned {
+  translation -0.85 0.00999997 0.75
+  rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
+  name "Ned(1)"
+  controller "ned_arm2_controller"
 }
 CardboardBox {
   translation 1.32 0.02 -0.77
