@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.5885686522255271 -0.7792119695178403 -0.21544291164379212 0.9058025938810487
-  position -1.816915847894719 2.0124209026161974 2.8247427635340285
+  orientation -0.010167803678234987 0.9894466326544605 0.14454057180290347 3.0567634653790265
+  position 1.185449183222876 0.33510373317620223 -1.3922953563241791
 }
 TexturedBackground {
 }
@@ -13,6 +13,28 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0.26 0 0
   floorSize 3 3
+}
+SolidBox {
+  translation 1.13 0.016843 -0.77
+  rotation 0.31569863111525087 -0.057825108037545966 0.9470958933457598 2.0256295059785284e-17
+  name "transport box"
+  size 0.03 0.03 0.015
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2021b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+  physics Physics {
+    density 2700
+    mass 0.05
+    damping Damping {
+      linear 0
+    }
+  }
 }
 SolidBox {
   translation 0.54 0.0968434 1.09
@@ -55,7 +77,7 @@ SolidBox {
 }
 E-puck {
   translation 0.75 0 0.75
-  controller "epuckController"
+  controller "epuck_controller"
 }
 OilBarrel {
   translation 0.59 0.17 -0.25
@@ -96,4 +118,23 @@ WoodenChair {
   name "wooden chair(1)"
   physics Physics {
   }
+}
+Ned {
+  translation 1.12 2.8022e-08 -0.49
+  rotation -0.577349935856137 0.577349935856137 0.5773509358560258 2.09439
+  controller "ned_arm_controller"
+}
+CardboardBox {
+  translation 1.32 0.02 -0.77
+  name "cardboard box(3)"
+  size 0.03 0.03 0.03
+  mass 0.001
+}
+PlasticCrate {
+  translation 1.41 0 -0.77
+  size 0.03 0.03 0.03
+  mass 2
+}
+PingPongBall {
+  translation 1.45 0.02 -0.77
 }
